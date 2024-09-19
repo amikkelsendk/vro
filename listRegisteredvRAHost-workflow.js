@@ -6,8 +6,7 @@
 // Tested on vRO 8
 
 var vrahosts = Server.findAllForType("vRA:Host",null);
-for each (var vraHost in vrahosts)
-{
-    System.log("NAME : " +vraHost.name);
-    System.log("DISPLAYNAME : " +vraHost.displayName);
+for each ( var vraHost in vrahosts ) {
+    System.log("NAME : " + vraHost.name);
+    System.log("URL  : " + vraHost.vraHost);
 }
